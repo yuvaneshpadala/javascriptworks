@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  .div{
+      position:relative;
+	  color:white;
+	  text-align:center;
+	  top:100px;
+  }
+  .div1{
+     position:relative;
+	 border:1px solid white;
+	  width:500px;
+	  left:30%;
+	 text-align:;
+	 top:100px;
+	 border-radius:10px;
+	padding-left:30px;
+	color:white;
+	
+  }
+   
+   .div3{
+     position:relative;
+	 border:1px solid black;
+	 width:500px;
+	 left:30%;
+	 text-align:center;
+	 top:200px;
+	 border-radius:10px;
+	 padding-left:30px;
+  }
+   .div4{
+    position:relative;
+	border:1px solid black;
+	width:500px;
+	left:30%;
+	top:100px;
+	text-align:center;
+	border-radius:10px;
+	padding-left:30px;
+  }
+  .blue{
+      position:relative;
+	  top:200px;
+	  
+  }
+    body{
+             
+         background:url('p41.jpg');
+			opacity:0.90;
+			background-repeat:no-repeat;
+			background-size:cover;
+			height:100vh;
+			
+			
+        }
+ .di{
+      position:relative;
+	  top:10px;
+	  
+ }
+  </style>  
+</head>
+<body>
+   <div class="di">
+    <a href="javaaaa.html"><button onclick="blue()" style="width:100px;" class="btn btn-primary">BACK</button></a>
+  </div>
+   <div class="div">
+  <h1>Account Details</h1>
+  </div>
+  <div class="div1">
+  <p style="font-size:20px;"><b>Account information</b></p>
+  <p><b>  Account Holder:</b>Padala Yuvanesh</p>
+  <p><b>Account number:</b>876243592345</p>
+  <p><b>Account type:</b>saving account</p>
+  <p><b>Account ISFC Code:SBIN0002740</b></p>
+  <p><b>Current Balance:</b>1000000</p>
+  </div>
+  
+  <div class="div3">
+  <p>Transaction History</p>
+  </div>
+  <div class="div4">
+  <p>Personal information</p>
+  </div>
+  <div class="blue">
+ <center><button onclick="blue2()" style="width:100px;" id="id" class="btn btn-danger">CREDIT</button>
+  <button onclick="blue()" style="width:100px;" id="" class="btn btn-danger">DEBIT</button></center>
+  </div>
+  <script>
+     function blue2() {
+                let a = +prompt("Enter your password");
+
+                if (a == "12345") {
+                    //alert("success");
+					location.href="credit.html";
+                } else {
+                    alert("incorrect");
+                } 
+            }
+	function blue() {
+                let a = +prompt("Enter your password");
+
+                if (a == "12345") {
+                    //alert("success");
+					location.href="debit.html";
+                } else {
+                    alert("incorrect");
+                } 
+            }
+  </script>
+</body>
+</html>
